@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="./calculadoras.js"></script>
+
+    <title>Primeira Lei</title>
+    <link rel="stylesheet" href="Leis.css">
+</head>
+<body>
+    <header>
+        <h1>Termodinâmica:</h1>
+        <h2><p>aprofundando na sua 1° lei</p><h2>
+        
+    </header>
+
+    <div class="conteudo ml-5 mr-5 mt-5">
+        <h6>A primeira lei da termodinâmica tem que, se formos analisar ela aplicada em algo do nosso cotidiano nós iremos perceber que, em todos eles a variação de energia interna ΔU. Isso ocorre por conta da forma como acontece a troca de calor Q e de trabalho T realizado no sistema. A fórmula que nos utilizamos nessa lei é: ΔU = Q - T.
+            <br><br>
+            Na transformação isométrica não ocorre variação de temperatura do gás, consequentemente não há variação de energia interna fazendo com que a fórmula seja: ΔU = 0, também não temos variação de volume, mantendo-o sempre em volume constante.
+            Em geral a primeira lei afirma que, apesar da quantidade de energia W trocada por trabalho e da quantidade de energia Q trocada por calor entre o sistema e a vizinhança dependerem, cada uma delas, do processo pelo qual o sistema passa de um estado para outro, a diferença Q − W não depende.
+            <br><br>
+            Para que você possa testar isto na prática, desenvolvemos a calculadora abaixo. Divirta-se!</h6>
+        <br><br>
+    </div>
+
+    <div> <!--Div mestre para os formulários-->
+
+        <!--Calculadora Trabalho-->
+        <form id="form" class="">
+            <h3>Calculadora Trabalho</h3>
+            <div class="form-group">
+              <label>Q</label>
+              <input type="number" class="form-control" id="q_trab" placeholder="Insira o q" required>
+            </div>
+      
+            <div class="form-group">
+              <label>U</label>
+              <input type="number" class="form-control" id="u_trab" placeholder="Insira o u" required>
+            </div>
+      
+            <div class="form-group">
+              <div class="alert alert-info" role="alert">
+                O resultado desta operação é <span id="resultadoCalcTrab"></span>
+              </div>
+            </div>
+      
+            <button type="button" onclick="calcTrab()" class="btn btn-primary w-100">Calcular</button>
+        </form>
+
+        <!--Calculadora do Calor-->
+        <form id="form" class="">
+            <h3>Calculadora do calor</h3>
+            <div class="form-group">
+              <label>W</label>
+              <input type="number" class="form-control" id="w_calor" placeholder="Insira o W" required>
+            </div>
+      
+            <div class="form-group">
+              <label>U</label>
+              <input type="number" class="form-control" id="u_calor" placeholder="Insira o U" required>
+            </div>
+      
+            <div class="form-group">
+              <div class="alert alert-info" role="alert">
+                  O resultado desta operação é <span id="resultadoCalcCalor"></span>
+              </div>
+            </div>
+      
+            <button type="button" onclick="calcCalor()" class="btn btn-primary w-100">Calcular</button>
+        </form>
+
+        <!--Calculadora da energia interna-->
+        <form id="form" class="">
+            <h3>Calculadora da energia interna</h3>
+            <div class="form-group">
+              <label>Q</label>
+              <input type="number" class="form-control" id="q_energiaInterna" placeholder="Insira o q" required>
+            </div>
+      
+            <div class="form-group">
+              <label>U</label>
+              <input type="number" class="form-control" id="u_energiaInterna" placeholder="Insira o u" required>
+            </div>
+      
+            <div class="form-group">
+              <div class="alert alert-info" role="alert">
+                O resultado desta operação é <span id="resultatoCalcEnergiaInterna"></span>
+              </div>
+            </div>
+      
+            <button type="button" onclick="calcEnergiaInterna()" class="btn btn-primary w-100">Calcular</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
+</body>
+</html>

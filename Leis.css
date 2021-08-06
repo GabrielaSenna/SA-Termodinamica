@@ -1,0 +1,47 @@
+body{
+font-family:Georgia, 'Times New Roman', Times, serif;
+background-color: #060713;
+color: #fff;
+}
+
+header{
+font-family:Georgia, 'Times New Roman', Times, serif;
+background-color: #090a1b95;
+color: #fff;
+text-align: center;
+background-image: url(./imagens/Leiscapa.png);
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+.conteudo{
+    margin:5;
+    width: auto;
+    text-align: justify
+}
+   
+
+#form{
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+#form h3{
+    text-align: center;
+    margin-top: 1em;
+}
+
+#form .form-group label{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul{
+        display: block;
+    }
+    nav li{
+        
+        margin-bottom: 16px;
+    }
+}
+

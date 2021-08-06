@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="calculadoras.js"></script>
+
+    <title>Segunda Lei</title>
+    <link rel="stylesheet" href="Leis.css">
+</head>
+<body>
+    <header>
+        <h1>Termodinâmica:</h1>
+        <h2><p>aprofundando na sua 2° lei</p><h2>
+    </header>
+
+    <div class="conteudo">
+        <p>De acordo com a segunda lei para existir conversão de modo contínuo de calor em trabalho, a máquina térmica deve operar em ciclo (entre duas fontes térmicas) sendo uma fonte quente e outra fria, em que a máquina retira calor da fonte quente e converte parcialmente em trabalho, sendo o restante rejeitado para a fonte fria.</p>
+        <p>O ciclo de Carnot é formado por duas transformações adiabáticas e duas isométricas que ocorrem de forma alternada. Determinando o maior rendimento possível entre duas temperaturas.</p>
+        <br>
+        <p>Para que você possa testar isto na prática, desenvolvemos a calculadora abaixo. Divirta-se!</p>
+        <br><br>
+    </div>
+
+    <form id="form" class="">
+      <h3>Calculadora Trabalho</h3>
+      <div class="form-group">
+        <label>Q1</label>
+        <input type="number" class="form-control" id="q1" placeholder="Insira o q1" required>
+      </div>
+
+      <div class="form-group">
+        <label>Q2</label>
+        <input type="number" class="form-control" id="q2" placeholder="Insira o q2" required>
+      </div>
+
+      <div class="form-group">
+        <div class="alert alert-info" role="alert">
+          O resultado desta operação é <span id="resultadoCalcRendimento"></span>
+        </div>
+      </div>
+
+      <button type="button" onclick="calcRendimento()" class="btn btn-primary w-100">Calcular</button>
+    </form>
+         
+    <script src="SegundaLei.js"></script>
